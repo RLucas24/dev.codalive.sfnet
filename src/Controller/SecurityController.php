@@ -41,6 +41,7 @@ class SecurityController extends AbstractController
     ['registrationForm'=>$form->createView()]);
     }
     
+    
     /**
      * @Route("/login", name="app_login", methods={"POST","GET"})
      */
