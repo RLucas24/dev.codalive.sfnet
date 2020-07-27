@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+{# <nav class="navbar navbar-expand-md bg-dark navbar-dark">
   <!-- Brand -->
   <a class="nav-link" href="{{ path('app_home')}}">Home</a>
 
@@ -29,7 +29,44 @@
       </li>
       {% endif %}
     </ul>
+  <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>  #}
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="{{ path('app_home')}}"><i class="fa fa-home" style="font-size:45px;color:grey"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-
-</nav> 
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      {% if app.user %}
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Secret <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{path('app_payment')}}">Payment</a>
+      </li>
+      {% endif %}
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      {% if app.user %}
+      <a class="nav-link mr-sm-2" href="{{ path('app_logout')}}">Logout</a>
+      {% else %}
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ path('app_login')}}">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ path('app_register')}}">Register</a>
+        </li>
+      </ul>
+      {% endif %}
+    </form>
+  </div>
+</nav>
