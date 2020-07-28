@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="esp" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="title.home">
+        <source>title.home</source>
+        <target>Hogar</target>
+      </trans-unit>
+      <trans-unit id="label.welcome">
+        <source>label.welcome</source>
+        <target>Bienvenidos</target>
+      </trans-unit>
+      <trans-unit id="label.email">
+        <source>label.email</source>
+        <target>correo electrónico</target>
+      </trans-unit>
+      <trans-unit id="label.login">
+        <source>label.login</source>
+        <target>Iniciar sesión</target>
+      </trans-unit>
+      <trans-unit id="label.signin">
+        <source>label.signin</source>
+        <target>Registrarse</target>
+      </trans-unit>
+      <trans-unit id="label.password">
+        <source>label.password</source>
+        <target>Contraseña</target>
+      </trans-unit>
+      <trans-unit id="label.payment">
+        <source>label.payment</source>
+        <target>Pago</target>
+      </trans-unit>
+      <trans-unit id="label.PAYMENT">
+        <source>label.PAYMENT</source>
+        <target>PAGO</target>
+      </trans-unit>
+      <trans-unit id="label.secret">
+        <source>label.secret</source>
+        <target>Secreto</target>
+      </trans-unit>
+      <trans-unit id="label.search">
+        <source>label.search</source>
+        <target>Buscar</target>
+      </trans-unit>
+      <trans-unit id="label.logout">
+        <source>label.logout</source>
+        <target>Cerrar sesión</target>
+      </trans-unit>
+      <trans-unit id="label.register">
+        <source>label.register</source>
+        <target>Registrarse</target>
+      </trans-unit>
+      <trans-unit id="label.remember_me">
+        <source>label.remember_me</source>
+        <target>Mantener mi sesión activa</target>
+      </trans-unit>
+      <trans-unit id="label.credit">
+        <source>label.credit</source>
+        <target>Tarjeta de crédito o débito</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

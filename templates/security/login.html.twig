@@ -3,10 +3,10 @@
 {% block title 'Login' %}
 
 {% block body %}
-    <h1>Log In</h1>
+    <h1>{{'label.signin'|trans}}</h1>
     <form novalidate method="POST">
         <div>
-            <label for="email">Email:</label><br>
+            <label for="email">{{'label.email'|trans }}:</label><br>
             <input 
             type="email" 
             id="email" 
@@ -15,18 +15,18 @@
             required autofocus>
         </div>
         <div>
-            <label for="password">Password:</label><br>
+            <label for="password">{{'label.password'|trans }}:</label><br>
             <input type="password" id="password" name="password" required autofocus>
         </div>
         <div>
             <label for="remember_me">
                 <input type="checkbox" id="remember_me" name="_remember_me">
-            Garde ma session active
+                {{'label.remember_me'|trans }}
             </label>
         </div>
             <input type="hidden" name="csrf_token" value="{{ csrf_token('login_form') }}">
             
-            <input type="submit" value="Sign in">
+            <input type="submit" value={{'label.signin'|trans }}>
         <div/>
     </form>
 {% endblock %}

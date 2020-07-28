@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="title.home">
+        <source>title.home</source>
+        <target>Fandraisana</target>
+      </trans-unit>
+      <trans-unit id="label.welcome">
+        <source>label.welcome</source>
+        <target>Tonga soa</target>
+      </trans-unit>
+      <trans-unit id="label.email">
+        <source>label.email</source>
+        <target>Mailaka</target>
+      </trans-unit>
+      <trans-unit id="label.login">
+        <source>label.login</source>
+        <target>Mamantatra</target>
+      </trans-unit>
+      <trans-unit id="label.signin">
+        <source>label.signin</source>
+        <target>Hiditra</target>
+      </trans-unit>
+      <trans-unit id="label.password">
+        <source>label.password</source>
+        <target>Teny miafina</target>
+      </trans-unit>
+      <trans-unit id="label.payment">
+        <source>label.payment</source>
+        <target>Mandoa vola</target>
+      </trans-unit>
+      <trans-unit id="label.PAYMENT">
+        <source>label.PAYMENT</source>
+        <target>FANDOAVA-MBOLA</target>
+      </trans-unit>
+      <trans-unit id="label.secret">
+        <source>label.secret</source>
+        <target>Miafina</target>
+      </trans-unit>
+      <trans-unit id="label.search">
+        <source>label.search</source>
+        <target>Mitady</target>
+      </trans-unit>
+      <trans-unit id="label.logout">
+        <source>label.logout</source>
+        <target>Miala</target>
+      </trans-unit>
+      <trans-unit id="label.register">
+        <source>label.register</source>
+        <target>Hisoratra anarana</target>
+      </trans-unit>
+      <trans-unit id="label.remember_me">
+        <source>label.remember_me</source>
+        <target>Ajanona akitiva ny session</target>
+      </trans-unit>
+      <trans-unit id="label.credit">
+        <source>label.credit</source>
+        <target>fanana ao aminy karatra</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

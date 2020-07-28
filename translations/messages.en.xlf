@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="title.home">
+        <source>title.home</source>
+        <target>Home</target>
+      </trans-unit>
+      <trans-unit id="label.welcome">
+        <source>label.welcome</source>
+        <target>Welcome</target>
+      </trans-unit>
+      <trans-unit id="label.email">
+        <source>label.email</source>
+        <target>Email</target>
+      </trans-unit>
+      <trans-unit id="label.login">
+        <source>label.login</source>
+        <target>Login</target>
+      </trans-unit>
+    <trans-unit id="label.signin">
+        <source>label.signin</source>
+        <target>Signin</target>
+      </trans-unit>
+      <trans-unit id="label.password">
+        <source>label.password</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="label.payment">
+        <source>label.payment</source>
+        <target>Payment</target>
+      </trans-unit>
+      <trans-unit id="label.PAYMENT">
+        <source>label.PAYMENT</source>
+        <target>PAYMENT</target>
+      </trans-unit>
+      <trans-unit id="label.secret">
+        <source>label.secret</source>
+        <target>secret</target>
+      </trans-unit>
+      <trans-unit id="label.search">
+        <source>label.search</source>
+        <target>Search</target>
+      </trans-unit>
+      <trans-unit id="label.logout">
+        <source>label.logout</source>
+        <target>Logout</target>
+      </trans-unit>
+      <trans-unit id="label.register">
+        <source>label.register</source>
+        <target>Register</target>
+      </trans-unit>
+      <trans-unit id="label.remember_me">
+        <source>label.remember_me</source>
+        <target>Keep my session active</target>
+      </trans-unit>
+      <trans-unit id="label.credit">
+        <source>label.credit</source>
+        <target>credit or debit card</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
