@@ -8,7 +8,7 @@
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       {% if app.user %}
       <li class="nav-item active">
-        <a class="nav-link" href="#">{{'label.secret'|trans }}<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{path('app_secrets_index')}}">{{'label.secret'|trans }}<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{path('app_payment')}}">{{'label.payment'|trans }}</a>
