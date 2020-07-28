@@ -30,9 +30,6 @@
         </li>
       </ul>
       {% endif %}
-
-      
-
        <div class="dropdown">
         <button class="btn" type="button" data-toggle="dropdown">
             <i class="fa fa-globe" style="font-size:40px;color:white"></i>
@@ -42,8 +39,8 @@
               {% if locale != app.request.locale %}
               <li>&nbsp;&nbsp;<a href="{{ path('change_locale', {'locale':locale})}}"><img src="{{ asset('build/img/'~locale~'.png')}}" width="20px" height="20px" alt="{{locale}}">&nbsp;
               {% if locale == 'en'%} Englais {% endif %}
-              {% if locale == 'fr'%} Français {% endif %}</a>
-              {% if locale == 'esp'%} Espagnol {% endif %}</a>
+              {% if locale == 'fr'%} Français {% endif %}
+              {% if locale == 'esp'%} Espagnol {% endif %}
               {% if locale == 'mlg'%} Malagasy {% endif %}</a>
               </li>
               {% endif %}
