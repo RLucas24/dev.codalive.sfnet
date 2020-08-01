@@ -6,7 +6,6 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
         {# 'app' must match the first argument to addEntry() in webpack.config.js #}
-        {{ encore_entry_link_tags('app') }}
         {# bootstrap 4 #}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         
@@ -39,7 +38,6 @@
             {% block body %}{% endblock %}
         </main>
         {% block javascripts %}
-        {{ encore_entry_script_tags('app') }}
         <script src="https://js.stripe.com/v3/"></script>
         {# bootstrap 4 #}
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
