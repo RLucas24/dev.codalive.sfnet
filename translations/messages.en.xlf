@@ -53,6 +53,10 @@
         <source>label.register</source>
         <target>Register</target>
       </trans-unit>
+      <trans-unit id="label.or">
+        <source>label.or</source>
+        <target>or</target>
+      </trans-unit>
       <trans-unit id="label.remember_me">
         <source>label.remember_me</source>
         <target>Keep my session active</target>
