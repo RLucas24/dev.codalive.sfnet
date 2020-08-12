@@ -1,0 +1,86 @@
+
+{% extends "/base.html.twig" %}
+{% block title 'Live' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /**
+        * The CSS shown here will not be introduced in the Quickstart guide, but shows
+        * how you can use CSS to style your Element's container.
+        */
+    #my_camera, #results{
+        width: 600px;
+        height: 600px;
+        border: 3px solid gray;
+        border-radius: 5px;
+    }
+    </style>
+{% endblock %}
+{% block body %}
+    <h1>video live izy io</h1>
+            <center>
+            <div class="card" id="my_camera"></div>
+                <div class="card-body"><button type="button" value="Take Snapshot" class="btn btn-warning" onClick="take_snapshot()">Take Snapshot</button></div>         
+                <div id="results" class="card"></div>
+            </center>
+{% endblock %}
+    
+{% block javascripts %}
+        {# navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+
+        if(navigator.getUserMedia){
+            navigator.getUserMedia({video: true}, handleVideo, videoError);
+        }
+        
+        function handleVideo(stream){
+            document.querySelector('#vidDisplay').src = windows.URL.createObjectURL(stream);
+        }
+
+        function videoError(e){
+            alert("there has some problem ...");
+        } #}
+
+
+        {# var video=document.querySelector("#videoElement");
+        navigator.getUserMedia=navigator.getUserMedia||navigator.webkitGetUserMedia||navigator.mozGetUserMedia||navigator.msGetUserMedia||navigator.oGetUserMedia;
+        if(navigator.getUserMedia){
+            navigator.getUserMedia({video:true}, handleVideo, videoError);
+        }
+        function handleVideo(stream){
+            video.src=window.URL.createObjectURL(stream);
+        }
+        function videoError(e){
+            alert("there has some problem ...");
+        } #}
+
+<!-- Script -->
+<!-- Webcam.min.js -->
+	<script type="text/javascript" src="{{ asset('build/webcamjs/webcam.min.js')}}"></script>
+
+	<!-- Configure a few settings and attach camera -->
+	<script language="JavaScript">
+		Webcam.set({
+			width: 320,
+			height: 240,
+			image_format: 'jpeg',
+			jpeg_quality: 90
+		});
+		Webcam.attach( '#my_camera' );
+	</script>
+	<!-- A button for taking snaps -->
+	
+	<!-- Code to handle taking the snapshot and displaying it locally -->
+	<script language="JavaScript">
+
+		function take_snapshot() {
+			
+			// take snapshot and get image data
+			Webcam.snap( function(data_uri) {
+				// display results in page
+				document.getElementById('results').innerHTML = 
+					'<img src="'+data_uri+'"/>';
+			} );
+		}
+	</script>
+{% endblock %}

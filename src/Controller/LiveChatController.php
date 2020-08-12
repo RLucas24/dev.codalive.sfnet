@@ -9,11 +9,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 class LiveChatController extends AbstractController
 {
     /**
-     * @Route("/live", name="app_secrets_index")
+     * @Route("/live", name="app_live_chat")
      * @IsGranted("ROLE_USER")
      */
     public function index()
     {
-        return $this->render('secrets/index.html.twig');
+        return $this->render('chat/live_chat.html.twig');
     }
 }
